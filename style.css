@@ -1,0 +1,693 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+    
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff1a;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000000
+    
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Home Section */
+/* Home Section */
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    background: url('./About-image/messimg.jpg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(0.8); /* Reduce contrast of background image */
+    color: #fff; /* Default text color */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1; /* Ensure text is above the background */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+    border-radius: 8px;
+}
+
+.home-section h2 {
+    font-size: 49px;
+    margin-bottom: 10px;
+    color: #ffffff; /* High contrast text color (bright yellow) */
+    text-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 40px cyan,
+                0 0 80px cyan;
+                
+}
+
+.home-section p {
+    font-size: 22px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .home-section {
+        height: 400px; /* Adjust height for tablets */
+    }
+
+    .home-section h2 {
+        font-size: 28px;
+    }
+
+    .home-section p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        height: 300px; /* Adjust height for mobile devices */
+    }
+
+    .home-section h2 {
+        font-size: 24px;
+    }
+
+    .home-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .home-section h2 {
+        font-size: 20px;
+    }
+
+    .home-section p {
+        font-size: 14px;
+    }
+}
+
+/* end of home section */
+/* Responsive Styles */
+/* navigation bar */
+/* General Navigation Styles */
+header {
+    background-color: #333;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: row; /* Ensure items are in a row on smaller screens */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: row; /* Items in a row */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* home section */
+@media (max-width: 1024px) {
+    .home-section {
+        height: 300px; /* Adjust height for tablets */
+        padding: 15px;
+    }
+
+    .home-section h2 {
+        font-size: 28px; /* Adjust font size for tablets */
+    }
+
+    .home-section p {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        height: 250px; /* Adjust height for mobile devices */
+        padding: 10px;
+    }
+
+    .home-section h2 {
+        font-size: 24px; /* Adjust font size for mobile devices */
+    }
+
+    .home-section p {
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        height: 200px; /* Adjust height for smaller screens */
+        padding: 5px;
+    }
+
+    .home-section h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .home-section p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+/* my add for redmi note 10 */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    /* Additional responsive styles */
+}
+nav ul {
+    display: flex;
+    flex-direction: row; /* Change to column if needed */
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+/* end of the add redmi note 10 */
+/* fade in up */
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for elements that will be animated */
+.fade-in-up {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 1s ease-out;
+}
+
+/* When element is in view, apply animation */
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* end of faed in up */
+.home-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: add a dark overlay for better text contrast */
+    z-index: 0; /* Ensure overlay is behind the text */
+}
+
+
+/* About Section */
+/* .about-section {
+    background-color: #fff;
+} */
+/* start about section */
+/* About Section */
+
+/* About Section */
+.full-about{
+    margin-top: 3px;
+}
+.about-section {
+    background-color: #ffffff; /* Background color for the About section */
+    padding: 50px 20px;
+    text-align: center; /* Center align text and heading */
+}
+
+.about-heading {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000000; /* Color for the heading */
+    
+}
+
+ /* underline */
+ .about-heading{
+    position: relative;
+    /* display: inline-block; */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 45px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    
+    background-color: yellow;
+   
+
+  }
+  
+  .about-heading::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px; /* Adjust underline thickness */
+    background-color: #000; /* Adjust underline color */
+    bottom: -5px; /* Space between text and underline */
+    left: 0;
+    transition: width 0.3s ease;
+   
+  }
+  
+  .about-heading:hover::after {
+    width: 100%;
+    
+  }
+  
+ /* underline */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:none; /* Space between text and image */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    /* margin-top: 10px; */
+    background-color: #d0e9b7;
+}
+.about-text {
+    flex: 1;
+    max-width: 500px; /* Limit the width of text content */
+}
+
+.about-text p {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #555; /* Text color */
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px; /* Limit the width of the image */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    cursor: pointer; /* Indicate clickable image */
+    transition: 1s ease;
+}
+.about-image img:hover{
+    border: 2px solid black;
+    border-radius: none;
+    transform: rotateY(180deg);
+    /* transform: scale(1.1
+    ); */
+    
+
+}
+
+/* Fullscreen Image Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay img.zoomed {
+    transform: scale(1.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 90%;
+    }
+}
+.contact-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff; /* Primary color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+
+/* end of about section */
+
+/* Services Section */
+.services-section {
+    background-color: #f9f9f9;
+}
+
+.services-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-section ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+/* Rooms Section */
+.rooms-section {
+    background-color: #fff;
+}
+
+.room {
+    margin: 20px 0;
+}
+
+.room h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.room p {
+    font-size: 18px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #eaeaea;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Styles */
+
+/* Devices between 768px and 1024px */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .home-section h2 {
+        font-size: 30px;
+    }
+
+    .home-section p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .room h3 {
+        font-size: 22px;
+    }
+}
+
+/* Devices between 480px and 767px */
+@media (max-width: 767px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .home-section h2 {
+        font-size: 28px;
+    }
+
+    .home-section p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .room h3 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Mobile devices less than 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .home-section h2 {
+        font-size: 24px;
+    }
+
+    .home-section p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .room h3 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
